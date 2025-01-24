@@ -30,3 +30,45 @@ To access the dataset:
 Install the required dependencies using:
 ```bash
 pip install -r requirements.txt
+```
+
+Key Libraries
+1. TensorFlow: For building and training the LSTM model.
+2. Pandas: For data manipulation and preprocessing.
+3. Scikit-learn: For splitting the dataset.
+4. Kaggle API: For downloading the dataset.
+
+How It Works
+1. Data Collection: Downloads the IMDB dataset from Kaggle.
+2. Data Preprocessing:
+Tokenizes and converts text reviews into padded sequences.
+Converts sentiments to binary labels (positive = 1, negative = 0).
+3. Model Building:
+Embedding Layer: Converts words to dense vectors.
+LSTM Layer: Captures temporal patterns in the text data.
+Dense Layer: Outputs the probability of positive sentiment.
+4. Training:
+Trains the LSTM model with a validation split of 20%.
+5. Evaluation:
+Evaluates the model's performance on test data.
+6. Prediction:
+Accepts custom text reviews for sentiment prediction.
+
+Example Predictions
+1. Positive Review:
+Input: "This movie was fantastic, with amazing acting!"
+Output: "Positive"
+
+2. Negative Review:
+Input: "The storyline was boring and predictable."
+Output: "Negative"
+
+Contributing
+Contributions are welcome! Feel free to submit issues or pull requests to improve the project.
+
+Acknowledgments
+Kaggle: For the IMDB dataset.
+TensorFlow & Scikit-learn for the tools and libraries.
+
+Let me know if you'd like any additional sections or modifications!
+
